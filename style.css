@@ -40,3 +40,56 @@ body {
 .sidebar-main-menu div i, .sidebar-sub-menu div i {
   text-align: right;
 }
+
+.user-icon {
+  border-radius: 50%;
+  background-color: rgb(148, 148, 21);
+  color: white;
+}
+.user-iconS {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+}
+.user-iconL {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.5rem;
+}
+
+button {
+  background-color: #1992D4;
+  border: none;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.user-icon {
+  position: relative;
+}
+.user-icon .fa-user {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  background-color: #E2E8F0;
+  border: none;
+  border-radius: 2rem;
+  height: 2rem;
+  width: 600px;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.i-size {
+  font-size: 1.5rem;
+}
