@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar-container {
+  background-color: #1992D4;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.sidebar-container div:nth-child(2), .sidebar-container div:nth-child(3) {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.sidebar-main-menu, .sidebar-sub-menu {
+  padding-left: 1rem;
+}
+.sidebar-main-menu div, .sidebar-sub-menu div {
+  margin-bottom: 1rem;
+}
+.sidebar-main-menu {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.s-sp {
+  margin-left: 1rem;
+}
+.sidebar-main-menu div i, .sidebar-sub-menu div i {
+  text-align: right;
+}
