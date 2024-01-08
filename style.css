@@ -1,3 +1,5 @@
+* {margin: 0; padding: 0;}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 2fr 7fr;
   width: 100%;
   height: 100vh;
 }
@@ -24,9 +26,6 @@ body {
   font-weight: bold;
 }
 
-.sidebar-main-menu, .sidebar-sub-menu {
-  padding-left: 1rem;
-}
 .sidebar-main-menu div, .sidebar-sub-menu div {
   margin-bottom: 1rem;
 }
@@ -60,9 +59,10 @@ body {
 button {
   background-color: #1992D4;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: white;
-  padding: 0.8rem;
+  height: 40px;
+  padding: 0rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-radius: 2rem;
@@ -84,12 +84,71 @@ input {
   border: none;
   border-radius: 2rem;
   height: 2rem;
-  width: 600px;
+  width: 30rem;
   font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .i-size {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+.sidebar-title {
+  margin-top: 1rem;
+}
+
+.header {
+  height: 25vh;
+  border-bottom: 1px solid rgb(206, 201, 201);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 1rem;
+}
+
+.header1 {
+  grid-column: 1/3;
+  justify-self: start;
+  align-self: center;
+  margin-left: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+}
+.header1 div:nth-child(1) {
+  justify-self: end;
+}
+
+.header2 {
+  display: grid;
+  grid-template-columns: 4fr 1fr 4fr;
+  align-items: center;
+  gap: 1rem;
+}
+.header2 div:nth-child(1) {
+  justify-self: end;
+}
+
+.header3 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  gap: 1rem;
+  grid-column: 1/3;
+}
+.header3 div:nth-child(1) {
+  margin-left: 4rem;
+}
+
+.btns {
+  grid-column: 3;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.btns div:nth-child(1) {
+  justify-self: center;
 }
