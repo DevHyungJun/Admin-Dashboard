@@ -152,3 +152,27 @@ input {
 .btns div:nth-child(1) {
   justify-self: center;
 }
+
+.main-section {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.main-section-left {
+  display: grid;
+  height: 75vh;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  padding-top: 0;
+  gap: 1rem;
+  grid-auto-rows: minmax(200px, auto);
+  align-items: center;
+}
+
+.main-section div {
+  padding: 1rem;
+}
+
+.main-section-right {
+  border: 1px solid black;
+}
